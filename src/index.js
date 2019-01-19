@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HelloWorld from './components/HelloWorld';
 
-const HelloWorld = ({ text }) => (
-  <h1>{text}</h1>
-);
-
-ReactDOM.render(<HelloWorld text="Hello World" />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld text="Hola Mundo Cruel" />, document.getElementById('app'));
