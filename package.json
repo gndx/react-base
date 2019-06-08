@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "format": "prettier --write '{*.js,src/**/*.{js,jsx,json,css}}'"
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore"
   },
   "keywords": [
     "react",
@@ -28,6 +29,7 @@
     "webpack-dev-server": "^3.7.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
@@ -45,8 +47,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,json}": [
+    "*.{js,jsx}": [
       "npm run format",
+      "npm run lint",
       "git add"
     ]
   }
