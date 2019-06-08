@@ -4,7 +4,8 @@
   "description": "React Base",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [
     "react",
@@ -22,6 +23,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.7.1"
   }
 }
