@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
-    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore"
+    "lint": "eslint src/ --fix"
   },
   "keywords": [
     "react",
